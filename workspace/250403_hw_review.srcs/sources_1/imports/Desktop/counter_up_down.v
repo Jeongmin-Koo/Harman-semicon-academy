@@ -1,27 +1,56 @@
 `timescale 1ns / 1ps
 
-module top_counter_up_down (
+module top (
     input        clk,
     input        reset,
-    input        sw_mode,
-    input        sw_run_stop,
-    input        sw_clear,
     output [3:0] fndCom,
-    output [7:0] fndFont
-);  
+    output [7:0] fndFont,
+    output       tx,
+    input        rx
+
+);
     wire [13:0] fndData;
     wire [ 3:0] fndDot;
     wire en, clear, mode;
 
+    wire [7:0] rx_data;
+    wire       rx_done;
+    wire [7:0] tx_data;
+    wire       tx_start;
+    wire       tx_busy;
+    wire       tx_done;
+
+    uart U_uart (
+        // global port
+        .clk(clk),
+        .reset(reset),
+        // tx side port
+        .tx_data(tx_data),
+        .tx_start(tx_start),
+        .tx_busy(tx_busy),
+        .tx_done(tx_done),
+        .tx(tx),
+        // rx side port
+        .rx_data(rx_data),
+        .rx_done(rx_done),
+        .rx(rx)
+    );
+
     control_unit U_ControlUnit (
-        .clk        (clk),
-        .reset      (reset),
-        .sw_mode    (sw_mode),
-        .sw_run_stop(sw_run_stop),
-        .sw_clear   (sw_clear),
-        .en         (en),
-        .clear      (clear),
-        .mode       (mode)
+        .clk     (clk),
+        .reset   (reset),
+        // tx side port
+        .tx_data (tx_data),
+        .tx_start(tx_start),
+        .tx_busy (tx_busy),
+        .tx_done (tx_done),
+        // rx side port
+        .rx_data (rx_data),
+        .rx_done (rx_done),
+        // data path side port
+        .en      (en),
+        .clear   (clear),
+        .mode    (mode)
     );
 
     counter_up_down U_Counter (
@@ -34,6 +63,16 @@ module top_counter_up_down (
         .dot_data(fndDot)
     );
 
+    stopwatch U_stopwatch(
+        .clk(clk),
+        .reset(rest),
+        .en(en),
+        .clear(clear),
+        .count(fndData),
+        .dot_data(fndDot)
+    );
+
+
     fndController U_FndController (
         .clk    (clk),
         .reset  (reset),
@@ -42,64 +81,168 @@ module top_counter_up_down (
         .fndCom (fndCom),
         .fndFont(fndFont)
     );
+
 endmodule
 
+
 module control_unit (
-    input      clk,
-    input      reset,
-    input      sw_mode,
-    input      sw_run_stop,
-    input      sw_clear,
-    output reg en,
-    output reg clear,
-    output reg mode
+    input            clk,
+    input            reset,
+    // tx side port
+    output reg [7:0] tx_data,
+    output reg       tx_start,
+    input            tx_busy,
+    input            tx_done,
+    // rx side port
+    input      [7:0] rx_data,
+    input            rx_done,
+    // data path side port
+    output reg       en,
+    output reg       clear,
+    output reg       mode
 );
     localparam STOP = 0, RUN = 1, CLEAR = 2;
+    localparam UP = 0, DOWN = 1;
+    localparam IDLE = 0, ECHO = 1;
+
     reg [1:0] state, state_next;
+    reg mode_state, mode_state_next;
+    reg echo_state, echo_state_next;
 
     always @(posedge clk, posedge reset) begin
         if (reset) begin
-            state <= STOP;
+            state      <= STOP;
+            mode_state <= UP;
+            echo_state <= IDLE;
         end else begin
-            state <= state_next;
+            state      <= state_next;
+            mode_state <= mode_state_next;
+            echo_state <= echo_state_next;
         end
+    end
+
+    always @(*) begin
+        echo_state_next = echo_state;
+        tx_data = 0;
+        tx_start = 1'b0;
+        case (echo_state)
+            IDLE: begin
+                tx_data  = 0;
+                tx_start = 1'b0;
+                if (rx_done) begin
+                    echo_state_next = ECHO;
+                end
+            end
+            ECHO: begin
+                if (tx_done) begin
+                    echo_state_next = IDLE;
+                end else begin
+                    tx_data  = rx_data;
+                    tx_start = 1'b1;
+                end
+            end
+        endcase
+    end
+
+    always @(*) begin
+        mode_state_next = mode_state;
+        mode = 1'b0;
+        case (mode_state)
+            UP: begin
+                mode = 1'b0;
+                if (rx_done) begin
+                    if (rx_data == "m" || rx_data == "M")
+                        mode_state_next = DOWN;  // ASCII 'M', 'm'
+                end
+            end
+            DOWN: begin
+                mode = 1'b1;
+                if (rx_done) begin
+                    if (rx_data == "m" || rx_data == "M")
+                        mode_state_next = UP;  // ASCII 'M', 'm'
+                end
+            end
+        endcase
     end
 
     always @(*) begin
         state_next = state;
         en         = 1'b0;
         clear      = 1'b0;
-        mode       = sw_mode;
         case (state)
             STOP: begin
                 en = 1'b0;
                 clear = 1'b0;
-                if (sw_run_stop) state_next = RUN;
-                else if (sw_clear) state_next = CLEAR;
+                if (rx_done) begin
+                    if (rx_data == "r" || rx_data == "R")
+                        state_next = RUN;  // ASCII 'r', 'R'
+                    else if (rx_data == "c" || rx_data == "C")
+                        state_next = CLEAR;  // ASCII 'c', 'C'
+                end
             end
             RUN: begin
                 en = 1'b1;
                 clear = 1'b0;
-                if (sw_run_stop == 1'b0) state_next = STOP;
+                if (rx_done) begin
+                    if (rx_data == "s" || rx_data == "S") state_next = STOP;
+                end
             end
             CLEAR: begin
                 en = 1'b0;
                 clear = 1'b1;
-                if (sw_clear == 1'b0) state_next = STOP;
+                state_next = STOP;
             end
         endcase
     end
+
 endmodule
 
+// 운동하고 와서 확인해보기
+module demux_1x2 (
+    input clk, rst,
+    input [2:0] in,
+    input sel,
+    input btn,
+    output reg [2:0] y0, y1
+    );
 
+    reg sel_reg;
 
+    assign sel = sel_reg;
+
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            sel_reg <= 0;
+        end else begin
+            sel_reg <= (btn)? ~sel : sel;
+        end
+    end
+
+    always @(*) begin
+        case (sel)
+            0: begin y0 = in; y1 = 0; end
+            1: begin y0 = 0; y1 = in; end
+        endcase
+    end
+    
+endmodule
 
 module comp_dot (
     input  [13:0] count,
     output [ 3:0] dot_data
 );
     assign dot_data = ((count % 10) < 5) ? 4'b1101 : 4'b1111;
+
 endmodule
+
+module comp_dot_stopwatch (
+    input  [13:0] count,
+    output [ 3:0] dot_data
+);
+    assign dot_data = ((count % 10) < 5) ? 4'b0101 : 4'b1111;
+
+endmodule
+
 
 module counter_up_down (
     input         clk,
@@ -134,8 +277,77 @@ module counter_up_down (
         .count(count),
         .dot_data(dot_data)
     );
+
 endmodule
 
+module stopwatch (
+    input         clk,
+    input         reset,
+    input         en,
+    input         clear,
+    output [13:0] count,
+    output [3:0] dot_data
+);
+
+    wire tick;
+
+    clk_div_10hz U_Clk_Div_10Hz (
+        .clk  (clk),
+        .reset(reset),
+        .tick (tick),
+        .en   (en),
+        .clear(clear)
+    );
+    
+    stopwatch_dp U_stopwatch_dp(
+        .clk(clk),
+        .reset(reset),
+        .tick(tick),
+        .en(en),
+        .clear(clear),
+        .count(count)
+    );
+
+    comp_dot_stopwatch U_Comp_Dot_stopwatch (
+        .count(count),
+        .dot_data(dot_data)
+    );
+
+
+endmodule
+
+module stopwatch_dp (
+    input         clk,
+    input         reset,
+    input         tick,
+    input         en,
+    input         clear,
+    output reg [13:0] count
+);
+
+    always @(posedge clk or reset) begin
+        if (reset) begin
+            count <= 0;
+        end else if (clear) begin
+            count <= 0;
+        end else begin
+            if (tick) begin
+                if (en) begin
+                    if (count == 9999) begin
+                        count <= 0;
+                    end else begin
+                        count <= count + 1;
+                    end                    
+                end else begin
+                    count <= count;
+                end
+            end else begin
+                count <= count;
+            end
+        end
+    end
+    
+endmodule
 
 module counter (
     input         clk,
@@ -179,7 +391,9 @@ module counter (
             end
         end
     end
+
 endmodule
+
 
 module clk_div_10hz (
     input  wire clk,
