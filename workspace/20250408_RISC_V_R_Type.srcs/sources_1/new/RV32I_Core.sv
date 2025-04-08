@@ -8,7 +8,7 @@ module RV32I_Core (
 );
 
     logic regFileWe;
-    logic [1:0] aluControl;
+    logic [3:0] aluControl;
 
     ControlUnit U_ControlUnit (.*);
 
