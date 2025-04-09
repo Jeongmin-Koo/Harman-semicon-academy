@@ -1,6 +1,6 @@
 `define ADD  4'b0000 // {fun7[5], func3}
 `define SUB  4'b1000
-`define SLL  4'b0000
+`define SLL  4'b0001
 `define SRL  4'b0101
 `define SRA  4'b1101
 `define SLT  4'b0010

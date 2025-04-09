@@ -188,7 +188,7 @@ module bit_splitter (
         y = 32'b0;
         case (bit_splitterSel)
             0: y = x;
-            1: y = x[4:0];
+            1: y = {27'b0, x[4:0]};
         endcase
     end
 
