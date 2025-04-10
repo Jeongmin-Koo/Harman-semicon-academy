@@ -27,9 +27,10 @@ module ControlUnit (
             `OP_TYPE_R: signals = 5'b1_0_0_0_0;
             `OP_TYPE_S: signals = 5'b0_1_0_1_0;
             `OP_TYPE_L: signals = 5'b1_1_1_0_0;
-            `OP_TYPE_I: signals = (operators == 4'b0001)? 5'b1_1_0_0_1 :
-                                  (operators == 4'b0101)? 5'b1_1_0_0_1 :
-                                  (operators == 4'b1101)? 5'b1_1_0_0_1 : 5'b1_1_0_0_0;
+            `OP_TYPE_I: signals = (operators == `SLL)? 5'b1_1_0_0_1 :
+                                  (operators == `SRL)? 5'b1_1_0_0_1 :
+                                  (operators == `SRA)? 5'b1_1_0_0_1 : 5'b1_1_0_0_0;
+            `OP_TYPE_B: signals = 5'b0_1_0_0_0;
         endcase
     end
 
@@ -39,8 +40,8 @@ module ControlUnit (
             `OP_TYPE_R: aluControl = operators;  // {fun7[5], func3} R-Type
             `OP_TYPE_S: aluControl = `ADD;  // rs1 + imm만 수행
             `OP_TYPE_L: aluControl = `ADD;  // rs1 + imm만 수행
-            `OP_TYPE_I:
-            aluControl = (operators == 4'b1000) ? 4'b0000 : operators;
+            `OP_TYPE_I: aluControl = (operators == `SUB) ? `ADD : operators; // I-Type은 SUB이 없음
+            `OP_TYPE_B: aluControl = `ADD;  // PC + imm만 수행
         endcase
     end
 
