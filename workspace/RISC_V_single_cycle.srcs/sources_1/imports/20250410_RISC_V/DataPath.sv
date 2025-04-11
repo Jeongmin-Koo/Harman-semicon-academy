@@ -190,10 +190,12 @@ module RegisterFile (
 );
     logic [31:0] RegFile[0:2**5-1];
     initial begin
-        for (int i = 0; i < 32; i++) begin
+        for (int i = 0; i < 31; i++) begin
             RegFile[i] = 10 + i;
         end
     end
+
+    assign RegFile[31] = 32'b0111_0000_0000_0000_0000_0000_0000_1111;
 
     always_ff @(posedge clk) begin
         if (we) RegFile[WAddr] <= WData;
