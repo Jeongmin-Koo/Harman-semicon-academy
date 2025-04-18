@@ -1,0 +1,3 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$finish called at time : 110 ns : File "C:/FPGA_Harman_25_1/250417_RISC_V_MultiCycle/250417_RISC_V_MultiCycle.srcs/sim_1/imports/20250411_RISC_V_SingleCycle_All_Type/tb_RV32I.sv" Line 15
