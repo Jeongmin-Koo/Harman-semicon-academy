@@ -24,6 +24,7 @@ module rom (
 
 
 
+
     $readmemh("code.mem", rom);
     
     end
