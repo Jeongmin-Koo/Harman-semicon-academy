@@ -278,9 +278,17 @@ class scoreboard;
                         end
                     end
                 end
-            end else begin  //read mode
+                end else begin  //read mode
                 read_cnt += 1;
-            end
+                    if(fnd_tr.PRDATA == refFndReg[fnd_tr.PADDR[3:2]]) begin
+                        $display("FND READ PASS");
+                        pass_cnt += 1;
+                    end
+                    else begin
+                        $display("FND READ FAIL");
+                        fail_cnt += 1;
+                    end
+                end
             total_cnt += 1;
             ->gen_next_event;  // event trigger
         end
