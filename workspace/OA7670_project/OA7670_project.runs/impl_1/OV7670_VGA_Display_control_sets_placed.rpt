@@ -1,0 +1,423 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Jun  9 16:46:17 2025
+| Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file OV7670_VGA_Display_control_sets_placed.rpt
+| Design       : OV7670_VGA_Display
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   345 |
+|    Minimum number of control sets                        |   345 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |  2314 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   345 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |   326 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     9 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              43 |           23 |
+| No           | No                    | Yes                    |              70 |           30 |
+| No           | Yes                   | No                     |               9 |            4 |
+| Yes          | No                    | No                     |             104 |           56 |
+| Yes          | No                    | Yes                    |             277 |           88 |
+| Yes          | Yes                   | No                     |            2951 |         1666 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+-----------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+|            Clock Signal            |                       Enable Signal                       |                     Set/Reset Signal                     | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------------+-----------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG                     | U_SCCB/U_SCCB_controlUnit/r_scl                           | reset_IBUF                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                     | U_SCCB/U_SCCB_controlUnit/r_sda_i_1_n_0                   | reset_IBUF                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                     | U_SCCB/U_SCCB_controlUnit/bitCount[3]_i_1_n_0             | reset_IBUF                                               |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_BOX_TOUCH/digit[3]_i_1_n_0                              | reset_IBUF                                               |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG                     | U_SCCB/U_SCCB_controlUnit/FSM_onehot_sda_state[5]_i_1_n_0 | reset_IBUF                                               |                1 |              6 |         6.00 |
+|  clk_IBUF_BUFG                     | U_SCCB/U_SCCB_controlUnit/dataBit[5]_i_1_n_0              | reset_IBUF                                               |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG                     | U_QVGA_MemController/U_convex_lens_warp/x_out[8]_i_2_n_0  | U_QVGA_MemController/U_convex_lens_warp/x_out[8]_i_1_n_0 |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG                     | U_SCCB/U_SCCB_controlUnit/r_addr[6]_i_1_n_0               | reset_IBUF                                               |                3 |              7 |         2.33 |
+|  U_Btn_Debounce/r_1khz             |                                                           | reset_IBUF                                               |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                     | U_QVGA_MemController/U_convex_lens_warp/x_out[8]_i_2_n_0  | U_QVGA_MemController/U_convex_lens_warp/y_out[7]_i_1_n_0 |                3 |              8 |         2.67 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/temp_data_0                        |                                                          |                7 |              8 |         1.14 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/v_counter0                         | reset_IBUF                                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_109[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_1[0]                  | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_114[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_115[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_12[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_120[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_122[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_125[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_127[0]                | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_129[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_101[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_102[0]                | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_126[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_130[0]                | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_111[0]                | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_134[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_123[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_133[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_135[0]                | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_136[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_137[0]                | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_118[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_138[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_11[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_113[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_116[0]                | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_121[0]                | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_124[0]                | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_128[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_119[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_117[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_13[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_19[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_132[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_0[0]                  | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_100[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_139[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_107[0]                | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_110[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_14[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_103[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_104[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_155[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_173[0]                | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_193[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_141[0]                | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_163[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_164[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_150[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_169[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_160[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_161[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_177[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_162[0]                | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_165[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_180[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_189[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_140[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_146[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_149[0]                | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_158[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_190[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_152[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_166[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_168[0]                | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_145[0]                | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_191[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_143[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_144[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_151[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_148[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_157[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_159[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_176[0]                | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_185[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_194[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_184[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_195[0]                | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_156[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_167[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_182[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_186[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_178[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_196[0]                | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_197[0]                | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_198[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_16[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_147[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_172[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_154[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_171[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_174[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_183[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_142[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_17[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_15[0]                 | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_175[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_179[0]                | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_187[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_153[0]                | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_170[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_18[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_181[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_188[0]                | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_192[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_208[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_32[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_33[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_36[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_47[0]                 | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_199[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_21[0]                 | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_37[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_216[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_25[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_41[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_200[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_213[0]                | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_48[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_5[0]                  | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_27[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_211[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_53[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_54[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_207[0]                | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_24[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_204[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_23[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_212[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_28[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_45[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_52[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_26[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_43[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_51[0]                 | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_201[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_214[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_22[0]                 | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_42[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_46[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_206[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_55[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_2[0]                  | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_209[0]                | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_38[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_203[0]                | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_44[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_56[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_35[0]                 | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_50[0]                 | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_39[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_20[0]                 | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_4[0]                  | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_57[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_58[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_59[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_6[0]                  | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_205[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_210[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_202[0]                | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_60[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_49[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_34[0]                 | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_40[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_31[0]                 | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_29[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_215[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_3[0]                  | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_30[0]                 | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_70[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_14[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_15[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_101[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_16[0]                 | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_17[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_85[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_18[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_89[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_9[0]                  | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_1[0]                  | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_78[0]                 | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_19[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_2[0]                  | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_20[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_61[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_100[0]                | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_22[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_23[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_21[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_68[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_24[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_82[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_66[0]                 | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_77[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_90[0]                 | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_92[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_81[0]                 | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_84[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_76[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_65[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_63[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_71[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_91[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_95[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_72[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_69[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_75[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_8[0]                  | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_74[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_88[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_93[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_94[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_96[0]                 | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_98[0]                 | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_67[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_7[0]                  | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_86[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_99[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_62[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_79[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_102[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_11[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_12[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_64[0]                 | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_80[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_83[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_0[0]                  | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_13[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_73[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_87[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_97[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_36[0]                 | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_58[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_73[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_74[0]                 | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_28[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_77[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_75[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_57[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_52[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_67[0]                 | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_71[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_78[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_80[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_82[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_55[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_25[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_50[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_6[0]                  | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_8[0]                  | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_83[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_31[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_49[0]                 | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_66[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_3[0]                  | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_51[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_68[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_76[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_79[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_60[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_84[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_63[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_81[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_27[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_37[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_44[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_59[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_38[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_32[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_40[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_43[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_4[0]                  | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_46[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_47[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_5[0]                  | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_56[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_62[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_30[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_35[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_41[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_64[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_65[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_7[0]                  | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_45[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_53[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_42[0]                 | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_29[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_61[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_26[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_54[0]                 | reset_IBUF                                               |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_69[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_72[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_39[0]                 | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_48[0]                 | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_70[0]                 | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_86[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_99[0]                 | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_87[0]                 | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_95[0]                 | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_97[0]                 | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_98[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_88[0]                 | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_90[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_9[0]                  | reset_IBUF                                               |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_92[0]                 | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_93[0]                 | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_96[0]                 | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_89[0]                 | reset_IBUF                                               |                9 |              9 |         1.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_91[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_85[0]                 | reset_IBUF                                               |                8 |              9 |         1.12 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[7]_94[0]                 | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/line_buffer_reg[2][0]_1            | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/line_buffer_reg[2][319]_0          | reset_IBUF                                               |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/E[0]                               | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_131[0]                | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     |                                                           | U_SCCB/U_SCCB_controlUnit/SR[0]                          |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_105[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_106[0]                | reset_IBUF                                               |                5 |              9 |         1.80 |
+|  ov7670_pclk_IBUF_BUFG             |                                                           |                                                          |                6 |              9 |         1.50 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_108[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_112[0]                | reset_IBUF                                               |                7 |              9 |         1.29 |
+|  clk_IBUF_BUFG                     | U_OV7670_MemController/wAddr_reg[3]_10[0]                 | reset_IBUF                                               |                6 |              9 |         1.50 |
+|  U_VGAController/U_Pix_Clk_Gen/CLK |                                                           | reset_IBUF                                               |                5 |             10 |         2.00 |
+|  U_VGAController/U_Pix_Clk_Gen/CLK | U_VGAController/U_Pix_Counter/v_counter                   | reset_IBUF                                               |                6 |             10 |         1.67 |
+|  clk_IBUF_BUFG                     | U_QVGA_MemController/U_convex_lens_warp/scale_fixed_next  | reset_IBUF                                               |                5 |             16 |         3.20 |
+|  ov7670_pclk_IBUF_BUFG             |                                                           | reset_IBUF                                               |                6 |             16 |         2.67 |
+|  ov7670_pclk_IBUF_BUFG             | diff__2_carry_i_47_n_0                                    |                                                          |               13 |             16 |         1.23 |
+|  ov7670_pclk_IBUF_BUFG             | U_BOX_TOUCH/hit_active                                    | U_BOX_TOUCH/hit_timer[26]_i_1_n_0                        |                6 |             27 |         4.50 |
+|  clk_IBUF_BUFG                     |                                                           |                                                          |               17 |             34 |         2.00 |
+|  clk_IBUF_BUFG                     |                                                           | reset_IBUF                                               |               16 |             36 |         2.25 |
+|  ov7670_pclk_IBUF_BUFG             | U_OV7670_MemController/wData[15]_i_1_n_0                  |                                                          |               36 |             80 |         2.22 |
+|  ov7670_pclk_IBUF_BUFG             | U_VGAController/U_Pix_Counter/b_total                     | reset_IBUF                                               |               24 |             96 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG             | U_WEATHER_EFFECT/frame_cnt0                               | reset_IBUF                                               |               51 |            147 |         2.88 |
++------------------------------------+-----------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+
+

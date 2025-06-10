@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1748507178">
+  <File Type="BITSTR-BMM" Name="imageVGA_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="imageVGA_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="imageVGA_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="imageVGA_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="imageVGA.tcl"/>
+  <File Type="OPT-TIMING" Name="imageVGA_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="imageVGA_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="imageVGA_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="imageVGA_reports.tcl"/>
+  <File Type="OPT-DRC" Name="imageVGA_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="imageVGA.hwdef"/>
+  <File Type="PWROPT-DCP" Name="imageVGA_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="imageVGA_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="imageVGA_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="imageVGA_placed.dcp"/>
+  <File Type="PLACE-IO" Name="imageVGA_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="imageVGA_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="imageVGA_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="imageVGA_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="imageVGA_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="imageVGA_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="imageVGA_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="imageVGA_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="imageVGA_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="imageVGA.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="imageVGA_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="imageVGA_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="imageVGA_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="imageVGA.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="imageVGA_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="imageVGA_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="imageVGA_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="imageVGA_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="imageVGA_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="imageVGA_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="imageVGA_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="imageVGA.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="imageVGA_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="imageVGA_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="imageVGA_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="imageVGA_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="imageVGA_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="imageVGA_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="imageVGA_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="imageVGA_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="imageVGA_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="imageVGA_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="imageVGA_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="imageVGA_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="imageVGA_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="imageVGA_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="imageVGA_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="imageVGA_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="imageVGA_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="imageVGA_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="imageVGA_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="imageVGA_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="imageVGA_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="imageVGA.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="imageVGA_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="imageVGA.rbt"/>
+  <File Type="BITSTR-NKY" Name="imageVGA.nky"/>
+  <File Type="PDI-FILE" Name="imageVGA.pdi"/>
+  <File Type="RCFI_FILE" Name="imageVGA.rcfi"/>
+  <File Type="CFI_FILE" Name="imageVGA.cfi"/>
+  <File Type="RNPI_FILE" Name="imageVGA.rnpi"/>
+  <File Type="NPI_FILE" Name="imageVGA.npi"/>
+  <File Type="RBD_FILE" Name="imageVGA.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="imageVGA.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="imageVGA.sysdef"/>
+  <File Type="BG-BGN" Name="imageVGA.bgn"/>
+  <File Type="BG-DRC" Name="imageVGA.drc"/>
+  <File Type="RDI-RDI" Name="imageVGA.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../20250529_VGA/VGA_Controller.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/image_rom.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/imageVGA.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../20250529_VGA/vga_rgb_switch.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Lenna.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="imageVGA"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../20250529_VGA/Basys-3-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
