@@ -1,0 +1,33 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[13]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[15]/D|
+|          dphy_hs_clock_p |          dphy_hs_clock_p |              system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[0].DPHY_LaneSFEN_X/HSDeserializerX/Deserializer/DDLY|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[21]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                        system_i/linearstrech_0/inst/m_axis_tdata_reg[7]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                        system_i/linearstrech_0/inst/m_axis_tdata_reg[2]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[12]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[17]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[14]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[16]/D|
+|          dphy_hs_clock_p |          dphy_hs_clock_p |              system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[1].DPHY_LaneSFEN_X/HSDeserializerX/Deserializer/DDLY|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[19]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                        system_i/linearstrech_0/inst/m_axis_tdata_reg[5]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                        system_i/linearstrech_0/inst/m_axis_tdata_reg[8]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                        system_i/linearstrech_0/inst/m_axis_tdata_reg[9]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                        system_i/linearstrech_0/inst/m_axis_tdata_reg[3]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                        system_i/linearstrech_0/inst/m_axis_tdata_reg[6]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[10]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                        system_i/linearstrech_0/inst/m_axis_tdata_reg[0]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[11]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                        system_i/linearstrech_0/inst/m_axis_tdata_reg[4]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[23]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                        system_i/linearstrech_0/inst/m_axis_tdata_reg[1]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[20]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[22]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[18]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/target_offset_reg[6]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                  system_i/AXI_Dehaze_Filter_0/inst/m_axis_tdata_reg[12]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/target_offset_reg[3]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

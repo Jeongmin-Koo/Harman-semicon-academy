@@ -1,0 +1,1248 @@
+
+*** Running vivado
+    with args -log system_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/0801_cctv/0726_project/rtl'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/0801_cctv/0726_project/ip_repo/myip_0726_axi_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/0801_cctv/0726_project/20250716_ov5640/night'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/0801_cctv/0726_project/ip_repo/myipSS_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/0801_cctv/0726_project/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/0801_cctv/0726_project/20250716_ov5640/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/motion'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/gui'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/zoom'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/new'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/0801_cctv/0726_project/20250716_ov5640/hw.ipdefs/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1075.496 ; gain = 0.000
+Command: link_design -top system_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0.dcp' for cell 'system_i/AXI_BayerToRGB_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_AXI_Dehaze_Filter_0_0/system_AXI_Dehaze_Filter_0_0.dcp' for cell 'system_i/AXI_Dehaze_Filter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_AXI_GammaCorrection_0_0/system_AXI_GammaCorrection_0_0.dcp' for cell 'system_i/AXI_GammaCorrection_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_AXI_Unsharp_Filter_L_0_4/system_AXI_Unsharp_Filter_L_0_4.dcp' for cell 'system_i/AXI_Unsharp_Filter_L_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_DVIClocking_0_0/system_DVIClocking_0_0.dcp' for cell 'system_i/DVIClocking_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/system_MIPI_CSI_2_RX_0_0.dcp' for cell 'system_i/MIPI_CSI_2_RX_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0.dcp' for cell 'system_i/MIPI_D_PHY_RX_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.dcp' for cell 'system_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.dcp' for cell 'system_i/axi_vdma_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axis_data_fifo_0_0/system_axis_data_fifo_0_0.dcp' for cell 'system_i/axis_data_fifo_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axis_data_fifo_0_1/system_axis_data_fifo_0_1.dcp' for cell 'system_i/axis_data_fifo_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axis_data_fifo_1_0/system_axis_data_fifo_1_0.dcp' for cell 'system_i/axis_data_fifo_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.dcp' for cell 'system_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_linearstrech_0_4/system_linearstrech_0_4.dcp' for cell 'system_i/linearstrech_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_motion_detect_0_2/system_motion_detect_0_2.dcp' for cell 'system_i/motion_detect_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_myip_axi20_0_1/system_myip_axi20_0_1.dcp' for cell 'system_i/myip_axi20_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0.dcp' for cell 'system_i/rgb2dvi_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_rst_clk_wiz_0_50M_0/system_rst_clk_wiz_0_50M_0.dcp' for cell 'system_i/rst_clk_wiz_0_50M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_rst_vid_clk_dyn_0/system_rst_vid_clk_dyn_0.dcp' for cell 'system_i/rst_vid_clk_dyn'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0.dcp' for cell 'system_i/v_axi4s_vid_out_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0.dcp' for cell 'system_i/video_dynclk'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_vtg_0/system_vtg_0.dcp' for cell 'system_i/vtg'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.dcp' for cell 'system_i/xadc_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_zoom_0_14/system_zoom_0_14.dcp' for cell 'system_i/zoom_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp' for cell 'system_i/axi_mem_intercon/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1.dcp' for cell 'system_i/axi_mem_intercon_1/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.dcp' for cell 'system_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2.dcp' for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.552 . Memory (MB): peak = 1075.496 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3398 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_AXI_GammaCorrection_0_0/xdc/AXI_GammaCorrection.xdc] for cell 'system_i/AXI_GammaCorrection_0/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_AXI_GammaCorrection_0_0/xdc/AXI_GammaCorrection.xdc] for cell 'system_i/AXI_GammaCorrection_0/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_vidclk'. The XDC file c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/ila_vidclk/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_rxclk_lane'. The XDC file c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/ila_rxclk_lane/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_rxclk'. The XDC file c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/ila_rxclk/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo.xdc] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo.xdc] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc] for cell 'system_i/MIPI_CSI_2_RX_0/U0'
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter {NAME =~ *allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK}'. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:45]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter {NAME =~ *allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg/D}'. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:45]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter {NAME =~ *allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK}]'. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:45]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:50]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp_q*" && IS_SEQUENTIAL }'. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:50]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:50]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:55]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp_q*" && IS_SEQUENTIAL }'. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:55]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:55]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:56]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp_q*" && IS_SEQUENTIAL }'. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:56]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc:56]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx.xdc] for cell 'system_i/MIPI_CSI_2_RX_0/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_scnn_refclk'. The XDC file c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/hdl/ila_scnn_refclk/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_sfen_refclk'. The XDC file c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/hdl/ila_sfen_refclk/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_sfen_rxclk'. The XDC file c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/hdl/ila_sfen_rxclk/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/hdl/MIPI_DPHY_Receiver.xdc] for cell 'system_i/MIPI_D_PHY_RX_0/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/hdl/MIPI_DPHY_Receiver.xdc] for cell 'system_i/MIPI_D_PHY_RX_0/U0'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc] for cell 'system_i/axi_vdma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:68]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:72]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:80]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:84]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:92]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:96]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:108]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:192]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:196]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:200]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:204]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:208]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:212]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:216]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:220]
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc] for cell 'system_i/axi_vdma_0/U0'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_board.xdc] for cell 'system_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_board.xdc] for cell 'system_i/clk_wiz_0/inst'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc] for cell 'system_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc] for cell 'system_i/clk_wiz_0/inst'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'system_i/rgb2dvi_0/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/src/rgb2dvi.xdc] for cell 'system_i/rgb2dvi_0/U0'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_rst_clk_wiz_0_50M_0/system_rst_clk_wiz_0_50M_0_board.xdc] for cell 'system_i/rst_clk_wiz_0_50M/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_rst_clk_wiz_0_50M_0/system_rst_clk_wiz_0_50M_0_board.xdc] for cell 'system_i/rst_clk_wiz_0_50M/U0'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_rst_clk_wiz_0_50M_0/system_rst_clk_wiz_0_50M_0.xdc] for cell 'system_i/rst_clk_wiz_0_50M/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_rst_clk_wiz_0_50M_0/system_rst_clk_wiz_0_50M_0.xdc] for cell 'system_i/rst_clk_wiz_0_50M/U0'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_rst_vid_clk_dyn_0/system_rst_vid_clk_dyn_0_board.xdc] for cell 'system_i/rst_vid_clk_dyn/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_rst_vid_clk_dyn_0/system_rst_vid_clk_dyn_0_board.xdc] for cell 'system_i/rst_vid_clk_dyn/U0'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_rst_vid_clk_dyn_0/system_rst_vid_clk_dyn_0.xdc] for cell 'system_i/rst_vid_clk_dyn/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_rst_vid_clk_dyn_0/system_rst_vid_clk_dyn_0.xdc] for cell 'system_i/rst_vid_clk_dyn/U0'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0_board.xdc] for cell 'system_i/video_dynclk/inst'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0_board.xdc] for cell 'system_i/video_dynclk/inst'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0.xdc] for cell 'system_i/video_dynclk/inst'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0.xdc] for cell 'system_i/video_dynclk/inst'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.xdc] for cell 'system_i/xadc_wiz_0/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.xdc] for cell 'system_i/xadc_wiz_0/U0'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/axi_gpio_0/U0'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/axi_gpio_0/U0'
+Parsing XDC File [C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/ZyboZ7_A.xdc]
+Finished Parsing XDC File [C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/ZyboZ7_A.xdc]
+Parsing XDC File [C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc]
+Finished Parsing XDC File [C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc]
+Parsing XDC File [C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/auto.xdc]
+WARNING: [Vivado 12-750] There are no ChipScope debug cores in this design. [C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/auto.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/auto.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-750] There are no ChipScope debug cores in this design. [C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/auto.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/auto.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-750] There are no ChipScope debug cores in this design. [C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/auto.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/auto.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/auto.xdc:12]
+Finished Parsing XDC File [C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/auto.xdc]
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo_clocks.xdc] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo_clocks.xdc:59]
+WARNING: [Timing 38-3] User defined clock exists on pin system_i/video_dynclk/inst/CLK_CORE_DRP_I/clk_inst/mmcm_adv_inst/CLKOUT0 [See C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc:9] and will prevent any subsequent automatic derivation of generated clocks on that pin. If the user defined clock specifies '-add', any existing auto-derived clocks on that pin are retained. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo_clocks.xdc:59]
+WARNING: [Timing 38-3] User defined clock exists on pin system_i/DVIClocking_0/U0/PixelClkBuffer/O [See C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc:17] and will prevent any subsequent automatic derivation of generated clocks on that pin. If the user defined clock specifies '-add', any existing auto-derived clocks on that pin are retained. [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo_clocks.xdc:59]
+INFO: [Timing 38-2] Deriving generated clocks [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo_clocks.xdc:59]
+all_fanout: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1727.902 ; gain = 577.895
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/cdc_fifo/cdc_fifo_clocks.xdc] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx_clocks.xdc] for cell 'system_i/MIPI_CSI_2_RX_0/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/hdl/mipi_csi2_rx_clocks.xdc] for cell 'system_i/MIPI_CSI_2_RX_0/U0'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/hdl/MIPI_DPHY_Receiver_clocks.xdc] for cell 'system_i/MIPI_D_PHY_RX_0/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/hdl/MIPI_DPHY_Receiver_clocks.xdc] for cell 'system_i/MIPI_D_PHY_RX_0/U0'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_clocks.xdc] for cell 'system_i/axi_vdma_0/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_clocks.xdc] for cell 'system_i/axi_vdma_0/U0'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'system_i/rgb2dvi_0/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc] for cell 'system_i/rgb2dvi_0/U0'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'system_i/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'system_i/v_axi4s_vid_out_0/inst'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0_late.xdc] for cell 'system_i/video_dynclk/inst'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0_late.xdc] for cell 'system_i/video_dynclk/inst'
+Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_vtg_0/system_vtg_0_clocks.xdc] for cell 'system_i/vtg/U0'
+Finished Parsing XDC File [c:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/sources_1/bd/system/ip/system_vtg_0/system_vtg_0_clocks.xdc] for cell 'system_i/vtg/U0'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/CDC_SINGLE_LOCKED_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/CDC_SINGLE_LOCKED_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/CDC_SINGLE_REMAP_UNDERFLOW_INST/xpm_cdc_single_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/CDC_SINGLE_REMAP_UNDERFLOW_INST/xpm_cdc_single_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/LineBufferFIFO/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/LineBufferFIFO/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_i/axis_data_fifo_2/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_i/axis_data_fifo_2/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_rst_sync.xpm_cdc_sync_rst_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/LineBufferFIFO/inst/gen_fifo.xpm_fifo_axis_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl] for cell 'system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/LineBufferFIFO/inst/gen_fifo.xpm_fifo_axis_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl] for cell 'system_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl] for cell 'system_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl] for cell 'system_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl] for cell 'system_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl] for cell 'system_i/axis_data_fifo_2/inst/gen_fifo.xpm_fifo_axis_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl] for cell 'system_i/axis_data_fifo_2/inst/gen_fifo.xpm_fifo_axis_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_i/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_i/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_i/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_i/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1727.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1363 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 32 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 224 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 15 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM64M => RAM64M (RAMD64E(x4)): 800 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 288 instances
+
+49 Infos, 34 Warnings, 14 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 1727.902 ; gain = 652.406
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1727.902 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-3] User defined clock exists on pin system_i/video_dynclk/inst/CLK_CORE_DRP_I/clk_inst/mmcm_adv_inst/CLKOUT0 [See C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc:9] and will prevent any subsequent automatic derivation of generated clocks on that pin. If the user defined clock specifies '-add', any existing auto-derived clocks on that pin are retained.
+WARNING: [Timing 38-3] User defined clock exists on pin system_i/DVIClocking_0/U0/PixelClkBuffer/O [See C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc:17] and will prevent any subsequent automatic derivation of generated clocks on that pin. If the user defined clock specifies '-add', any existing auto-derived clocks on that pin are retained.
+Ending Cache Timing Information Task | Checksum: 119608631
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1727.902 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 5 inverter(s) to 31 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: da0d895f
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1908.867 ; gain = 1.512
+INFO: [Opt 31-389] Phase Retarget created 309 cells and removed 611 cells
+INFO: [Opt 31-1021] In phase Retarget, 83 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Phase 2 Constant propagation | Checksum: 19964ffab
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1908.867 ; gain = 1.512
+INFO: [Opt 31-389] Phase Constant propagation created 46 cells and removed 684 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 423 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 18e0f3e38
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1908.867 ; gain = 1.512
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1900 cells
+INFO: [Opt 31-1021] In phase Sweep, 232 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-274] Optimized connectivity to 1 cascaded buffer cells
+Phase 4 BUFG optimization | Checksum: 13ce27d05
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1908.867 ; gain = 1.512
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 1 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 13ce27d05
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1908.867 ; gain = 1.512
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 141670f00
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1908.867 ; gain = 1.512
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 42 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             309  |             611  |                                             83  |
+|  Constant propagation         |              46  |             684  |                                            423  |
+|  Sweep                        |               0  |            1900  |                                            232  |
+|  BUFG optimization            |               0  |               1  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               1  |                                             42  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1908.867 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 10ebebbe7
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1908.867 ; gain = 1.512
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+WARNING: [Timing 38-3] User defined clock exists on pin system_i/video_dynclk/inst/CLK_CORE_DRP_I/clk_inst/mmcm_adv_inst/CLKOUT0 [See C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc:9] and will prevent any subsequent automatic derivation of generated clocks on that pin. If the user defined clock specifies '-add', any existing auto-derived clocks on that pin are retained.
+WARNING: [Timing 38-3] User defined clock exists on pin system_i/DVIClocking_0/U0/PixelClkBuffer/O [See C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc:17] and will prevent any subsequent automatic derivation of generated clocks on that pin. If the user defined clock specifies '-add', any existing auto-derived clocks on that pin are retained.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 30 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
+Number of BRAM Ports augmented: 13 newly gated: 2 Total Ports: 60
+Ending PowerOpt Patch Enables Task | Checksum: 8ea36205
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.268 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 8ea36205
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 2382.184 ; gain = 473.316
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 8ea36205
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: b7e09156
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+76 Infos, 38 Warnings, 14 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 2382.184 ; gain = 654.281
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-3] User defined clock exists on pin system_i/video_dynclk/inst/CLK_CORE_DRP_I/clk_inst/mmcm_adv_inst/CLKOUT0 [See C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc:9] and will prevent any subsequent automatic derivation of generated clocks on that pin. If the user defined clock specifies '-add', any existing auto-derived clocks on that pin are retained.
+WARNING: [Timing 38-3] User defined clock exists on pin system_i/DVIClocking_0/U0/PixelClkBuffer/O [See C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc:17] and will prevent any subsequent automatic derivation of generated clocks on that pin. If the user defined clock specifies '-add', any existing auto-derived clocks on that pin are retained.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/0801_cctv/0726_project/20250716_ov5640/hw.runs/impl_1/system_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file system_wrapper_drc_opted.rpt -pb system_wrapper_drc_opted.pb -rpx system_wrapper_drc_opted.rpx
+Command: report_drc -file system_wrapper_drc_opted.rpt -pb system_wrapper_drc_opted.pb -rpx system_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/0801_cctv/0726_project/20250716_ov5640/hw.runs/impl_1/system_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[0] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[1] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[2] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[3] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[4] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[5] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[6] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[7] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/ENBWREN (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEBWE[0] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEBWE[1] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEBWE[2] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 12 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 2562fd60
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ef1f3ad7
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 9dce8e2f
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 9dce8e2f
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 9dce8e2f
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 107eaee54
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 45 LUTNM shape to break, 583 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 13, two critical 32, total 45, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 292 nets or cells. Created 45 new cells, deleted 247 existing cells and moved 0 existing cell
+INFO: [Physopt 32-1022] Very high fanout net 'system_i/zoom_0/inst/_carry_n_7' has -through timing constraint at pin '' or its immediate connected net. To preserve -through timing constraint its fanout number considered in optimization is changed from 2560 to 513 and it is not considered a very high fanout net anymore. Please consider modifying/removing the '-through' timing constraint on the net segment or hierarchy pin.
+INFO: [Physopt 32-1022] Very high fanout net 'system_i/zoom_0/inst/pixel_mem_reg_0_63_0_2_i_2_n_6' has -through timing constraint at pin '' or its immediate connected net. To preserve -through timing constraint its fanout number considered in optimization is changed from 2560 to 513 and it is not considered a very high fanout net anymore. Please consider modifying/removing the '-through' timing constraint on the net segment or hierarchy pin.
+INFO: [Physopt 32-1022] Very high fanout net 'system_i/zoom_0/inst/pixel_mem_reg_0_63_0_2_i_2_n_7' has -through timing constraint at pin '' or its immediate connected net. To preserve -through timing constraint its fanout number considered in optimization is changed from 2560 to 513 and it is not considered a very high fanout net anymore. Please consider modifying/removing the '-through' timing constraint on the net segment or hierarchy pin.
+INFO: [Physopt 32-1022] Very high fanout net 'system_i/zoom_0/inst/pixel_mem_reg_0_63_0_2_i_3_n_4' has -through timing constraint at pin '' or its immediate connected net. To preserve -through timing constraint its fanout number considered in optimization is changed from 2560 to 513 and it is not considered a very high fanout net anymore. Please consider modifying/removing the '-through' timing constraint on the net segment or hierarchy pin.
+INFO: [Physopt 32-1022] Very high fanout net 'system_i/zoom_0/inst/pixel_mem_reg_0_63_0_2_i_3_n_5' has -through timing constraint at pin '' or its immediate connected net. To preserve -through timing constraint its fanout number considered in optimization is changed from 2560 to 513 and it is not considered a very high fanout net anymore. Please consider modifying/removing the '-through' timing constraint on the net segment or hierarchy pin.
+INFO: [Physopt 32-1022] Very high fanout net 'system_i/zoom_0/inst/pixel_mem_reg_0_63_0_2_i_3_n_6' has -through timing constraint at pin '' or its immediate connected net. To preserve -through timing constraint its fanout number considered in optimization is changed from 2560 to 513 and it is not considered a very high fanout net anymore. Please consider modifying/removing the '-through' timing constraint on the net segment or hierarchy pin.
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-81] Processed net system_i/rst_clk_wiz_0_50M/U0/peripheral_aresetn[0]. Replicated 8 times.
+INFO: [Physopt 32-232] Optimized 1 net. Created 8 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 8 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-527] Pass 1: Identified 2 candidate cells for BRAM register optimization
+INFO: [Physopt 32-665] Processed cell system_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0. 18 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell system_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1. 8 registers were pushed out.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 26 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           45  |            247  |                   292  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Fanout                                           |            8  |              0  |                     1  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |           26  |              0  |                     2  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           79  |            247  |                   295  |           0  |           9  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 1d182d368
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:28 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Phase 2.2 Global Placement Core | Checksum: 12e6328c9
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:29 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 12e6328c9
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:29 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: be2b0279
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:30 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 161358ab3
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:35 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 15bdf96d2
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:35 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1347a29b4
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:35 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 128a4b24b
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:40 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 11b4e1fc1
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:46 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1251dfe64
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:47 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 119237548
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:48 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1a5e8859d
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:54 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1a5e8859d
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:54 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-3] User defined clock exists on pin system_i/video_dynclk/inst/CLK_CORE_DRP_I/clk_inst/mmcm_adv_inst/CLKOUT0 [See C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc:9] and will prevent any subsequent automatic derivation of generated clocks on that pin. If the user defined clock specifies '-add', any existing auto-derived clocks on that pin are retained.
+WARNING: [Timing 38-3] User defined clock exists on pin system_i/DVIClocking_0/U0/PixelClkBuffer/O [See C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc:17] and will prevent any subsequent automatic derivation of generated clocks on that pin. If the user defined clock specifies '-add', any existing auto-derived clocks on that pin are retained.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1ed47c66c
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.046 | TNS=-2848.435 |
+Phase 1 Physical Synthesis Initialization | Checksum: 15efea99e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [Place 46-33] Processed net system_i/video_dynclk/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net system_i/vtg/U0/U_VIDEO_CTRL/GEN_HAS_IRQ.irq_i_1_n_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 2 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 2, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 191d942f3
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1ed47c66c
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:01 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-4.589. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1dd0aefef
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:01:16 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1dd0aefef
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:01:17 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1dd0aefef
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:17 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1dd0aefef
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:17 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 1e8ce2d1d
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:17 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1e8ce2d1d
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:17 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Ending Placer Task | Checksum: 1c2e1b1e2
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:17 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+129 Infos, 54 Warnings, 14 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:45 ; elapsed = 00:01:20 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/0801_cctv/0726_project/20250716_ov5640/hw.runs/impl_1/system_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file system_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization_placed.rpt -pb system_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file system_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.945 | TNS=-2844.970 |
+Phase 1 Physical Synthesis Initialization | Checksum: 9655ad24
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.945 | TNS=-2844.970 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 9655ad24
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.945 | TNS=-2844.970 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[20]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata_reg[23]_i_3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata_reg[23]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata_reg[19]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/m_axis_tdata[19]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.795 | TNS=-2843.778 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata_reg[7]_i_2_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata_reg[7]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata_reg[3]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/m_axis_tdata[3]_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.794 | TNS=-2843.546 |
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/m_axis_tdata[19]_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.788 | TNS=-2843.482 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[19]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/m_axis_tdata[20]_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.786 | TNS=-2843.428 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[23]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/p_0_out[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain15_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/apply_gain15_i_54_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.773 | TNS=-2843.292 |
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/apply_gain15_i_55_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.771 | TNS=-2842.956 |
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/m_axis_tdata[3]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.751 | TNS=-2842.816 |
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/m_axis_tdata[3]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.731 | TNS=-2842.236 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/p_0_out[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain15_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/apply_gain15_i_65_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.730 | TNS=-2842.228 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain15_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/apply_gain15_i_63_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.688 | TNS=-2841.892 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/p_0_out[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain15_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/apply_gain15_i_77_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.686 | TNS=-2841.588 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain15_i_38_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/apply_gain15_i_57_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.678 | TNS=-2841.420 |
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/m_axis_tdata[7]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.674 | TNS=-2841.404 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[3]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[5]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/p_0_out[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain15_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/apply_gain15_i_69_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.644 | TNS=-2840.580 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain15_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/apply_gain15_i_75_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.622 | TNS=-2840.404 |
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/apply_gain15_i_76_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.612 | TNS=-2840.324 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain15_i_54_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/sel[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/apply_gain7_carry_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.550 | TNS=-2838.836 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain7_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain4[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net system_i/linearstrech_0/inst/prev_min[1]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/prev_min[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.539 | TNS=-2838.140 |
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/apply_gain15_i_56_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.512 | TNS=-2837.924 |
+INFO: [Physopt 32-663] Processed net system_i/linearstrech_0/inst/prev_max[1].  Re-placed instance system_i/linearstrech_0/inst/prev_max_reg[1]
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/prev_max[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.449 | TNS=-2836.484 |
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/apply_gain15_i_76_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.445 | TNS=-2836.452 |
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/apply_gain15_i_77_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.439 | TNS=-2836.404 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain7_carry_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/linearstrech_0/inst/prev_max[0].  Re-placed instance system_i/linearstrech_0/inst/prev_max_reg[0]
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/prev_max[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.437 | TNS=-2836.068 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata_reg[15]_i_3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata_reg[11]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/m_axis_tdata[11]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.422 | TNS=-2835.188 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain15_i_55_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/sel[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain7_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/apply_gain7_carry_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.375 | TNS=-2833.388 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/sel[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain7_carry__0_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net system_i/linearstrech_0/inst/apply_gain7_carry__0_i_7_n_0.  Did not re-place instance system_i/linearstrech_0/inst/apply_gain7_carry__0_i_7
+INFO: [Physopt 32-572] Net system_i/linearstrech_0/inst/apply_gain7_carry__0_i_7_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/apply_gain7_carry__0_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.352 | TNS=-2833.204 |
+INFO: [Physopt 32-572] Net system_i/linearstrech_0/inst/prev_min[1]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net system_i/linearstrech_0/inst/prev_min[1]_repN.  Did not re-place instance system_i/linearstrech_0/inst/prev_min_reg[1]_replica
+INFO: [Physopt 32-81] Processed net system_i/linearstrech_0/inst/prev_min[1]_repN. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/prev_min[1]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.343 | TNS=-2832.988 |
+INFO: [Physopt 32-663] Processed net system_i/linearstrech_0/inst/prev_min[1]_repN_1.  Re-placed instance system_i/linearstrech_0/inst/prev_min_reg[1]_replica_1
+INFO: [Physopt 32-735] Processed net system_i/linearstrech_0/inst/prev_min[1]_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.339 | TNS=-2832.892 |
+INFO: [Physopt 32-662] Processed net system_i/linearstrech_0/inst/prev_min[1]_repN_1.  Did not re-place instance system_i/linearstrech_0/inst/prev_min_reg[1]_replica_1
+INFO: [Physopt 32-572] Net system_i/linearstrech_0/inst/prev_min[1]_repN_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/prev_min[1]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[1].DPHY_LaneSFEN_X/HSDeserializerX/dDataIn_int[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[1].DPHY_LaneSFEN_X/HSDeserializerX/DataInDly. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[1].InputBufferDataX/aHS. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dphy_data_hs_p[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata_reg[23]_i_3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[19]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[23]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/p_0_out[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain15_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain15_i_54_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/sel[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain7_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain4[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net system_i/linearstrech_0/inst/prev_min[1]_repN_1.  Did not re-place instance system_i/linearstrech_0/inst/prev_min_reg[1]_replica_1
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/prev_min[1]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[1].DPHY_LaneSFEN_X/HSDeserializerX/dDataIn_int[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dphy_data_hs_p[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.339 | TNS=-2832.892 |
+Phase 3 Critical Path Optimization | Checksum: 9655ad24
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.339 | TNS=-2832.892 |
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata_reg[23]_i_3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata_reg[23]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata_reg[19]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[19]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[23]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/p_0_out[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain15_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain15_i_54_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/sel[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain7_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain4[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net system_i/linearstrech_0/inst/prev_min[1]_repN_1.  Did not re-place instance system_i/linearstrech_0/inst/prev_min_reg[1]_replica_1
+INFO: [Physopt 32-572] Net system_i/linearstrech_0/inst/prev_min[1]_repN_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/prev_min[1]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[1].DPHY_LaneSFEN_X/HSDeserializerX/dDataIn_int[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[1].DPHY_LaneSFEN_X/HSDeserializerX/DataInDly. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[1].InputBufferDataX/aHS. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dphy_data_hs_p[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata_reg[23]_i_3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[19]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/m_axis_tdata[23]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/p_0_out[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain15_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain15_i_54_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/sel[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain7_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/apply_gain4[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net system_i/linearstrech_0/inst/prev_min[1]_repN_1.  Did not re-place instance system_i/linearstrech_0/inst/prev_min_reg[1]_replica_1
+INFO: [Physopt 32-702] Processed net system_i/linearstrech_0/inst/prev_min[1]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[1].DPHY_LaneSFEN_X/HSDeserializerX/dDataIn_int[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dphy_data_hs_p[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.339 | TNS=-2832.892 |
+Phase 4 Critical Path Optimization | Checksum: 9655ad24
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-4.339 | TNS=-2832.892 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.606  |         12.078  |            3  |              0  |                    28  |           0  |           2  |  00:00:02  |
+|  Total          |          0.606  |         12.078  |            3  |              0  |                    28  |           0  |           3  |  00:00:02  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 132f536e1
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+306 Infos, 54 Warnings, 14 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/0801_cctv/0726_project/20250716_ov5640/hw.runs/impl_1/system_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: b5d14dfd ConstDB: 0 ShapeSum: 5f530abc RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: b6db54ac
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 2382.184 ; gain = 0.000
+Post Restoration Checksum: NetGraph: b5c8ef02 NumContArr: 11265aa Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: b6db54ac
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: b6db54ac
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 2382.184 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: b6db54ac
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 2382.184 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1c2cb3c14
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:29 . Memory (MB): peak = 2382.184 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.272 | TNS=-2552.496| WHS=-0.443 | THS=-444.571|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 14c77b6ac
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:35 . Memory (MB): peak = 2417.336 ; gain = 35.152
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.272 | TNS=-2303.330| WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 123c47c9a
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:35 . Memory (MB): peak = 2417.336 ; gain = 35.152
+Phase 2 Router Initialization | Checksum: 1c80f138f
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:35 . Memory (MB): peak = 2417.336 ; gain = 35.152
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000310655 %
+  Global Horizontal Routing Utilization  = 0.000338066 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 23745
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 23744
+  Number of Partially Routed Nets     = 1
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1dfa6bb00
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:40 . Memory (MB): peak = 2439.918 ; gain = 57.734
+INFO: [Route 35-580] Design has 29 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[13]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[15]/D|
+|          dphy_hs_clock_p |          dphy_hs_clock_p |              system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[0].DPHY_LaneSFEN_X/HSDeserializerX/Deserializer/DDLY|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                       system_i/linearstrech_0/inst/m_axis_tdata_reg[21]/D|
+| clk_out2_system_clk_wiz_0_0 |clk_out2_system_clk_wiz_0_0 |                                                        system_i/linearstrech_0/inst/m_axis_tdata_reg[7]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2787
+ Number of Nodes with overlaps = 384
+ Number of Nodes with overlaps = 66
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.947 | TNS=-10318.387| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 126e0d79d
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:53 . Memory (MB): peak = 2439.918 ; gain = 57.734
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 83
+ Number of Nodes with overlaps = 31
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 23
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.947 | TNS=-9622.832| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: c513f585
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:58 . Memory (MB): peak = 2439.918 ; gain = 57.734
+Phase 4 Rip-up And Reroute | Checksum: c513f585
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:58 . Memory (MB): peak = 2439.918 ; gain = 57.734
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: b66515d8
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:00 . Memory (MB): peak = 2439.918 ; gain = 57.734
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.832 | TNS=-8741.409| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: d5acc8c6
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:01:01 . Memory (MB): peak = 2439.918 ; gain = 57.734
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: d5acc8c6
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:01:01 . Memory (MB): peak = 2439.918 ; gain = 57.734
+Phase 5 Delay and Skew Optimization | Checksum: d5acc8c6
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:01:01 . Memory (MB): peak = 2439.918 ; gain = 57.734
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1726720ce
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:03 . Memory (MB): peak = 2439.918 ; gain = 57.734
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.809 | TNS=-7694.827| WHS=-1.038 | THS=-2.032 |
+
+Phase 6.1 Hold Fix Iter | Checksum: 273aa73f2
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:03 . Memory (MB): peak = 2439.918 ; gain = 57.734
+Phase 6 Post Hold Fix | Checksum: 2415d0c7a
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:03 . Memory (MB): peak = 2439.918 ; gain = 57.734
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 7.17065 %
+  Global Horizontal Routing Utilization  = 9.09559 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 72.0721%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 83.7838%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 91.1765%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X19Y30 -> INT_R_X19Y30
+West Dir 1x1 Area, Max Cong = 77.9412%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 2196a2491
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:03 . Memory (MB): peak = 2439.918 ; gain = 57.734
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 2196a2491
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:03 . Memory (MB): peak = 2439.918 ; gain = 57.734
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 19154c793
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:05 . Memory (MB): peak = 2439.918 ; gain = 57.734
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 1a2b77e25
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:07 . Memory (MB): peak = 2439.918 ; gain = 57.734
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-4.809 | TNS=-7694.838| WHS=-1.038 | THS=-2.032 |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1a2b77e25
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:07 . Memory (MB): peak = 2439.918 ; gain = 57.734
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:07 . Memory (MB): peak = 2439.918 ; gain = 57.734
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+326 Infos, 55 Warnings, 14 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:09 . Memory (MB): peak = 2439.918 ; gain = 57.734
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 2439.918 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/0801_cctv/0726_project/20250716_ov5640/hw.runs/impl_1/system_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2439.918 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+Command: report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/0801_cctv/0726_project/20250716_ov5640/hw.runs/impl_1/system_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-3] User defined clock exists on pin system_i/video_dynclk/inst/CLK_CORE_DRP_I/clk_inst/mmcm_adv_inst/CLKOUT0 [See C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc:9] and will prevent any subsequent automatic derivation of generated clocks on that pin. If the user defined clock specifies '-add', any existing auto-derived clocks on that pin are retained.
+WARNING: [Timing 38-3] User defined clock exists on pin system_i/DVIClocking_0/U0/PixelClkBuffer/O [See C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc:17] and will prevent any subsequent automatic derivation of generated clocks on that pin. If the user defined clock specifies '-add', any existing auto-derived clocks on that pin are retained.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/0801_cctv/0726_project/20250716_ov5640/hw.runs/impl_1/system_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 2643.645 ; gain = 203.727
+INFO: [runtcl-4] Executing : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+Command: report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-3] User defined clock exists on pin system_i/video_dynclk/inst/CLK_CORE_DRP_I/clk_inst/mmcm_adv_inst/CLKOUT0 [See C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc:9] and will prevent any subsequent automatic derivation of generated clocks on that pin. If the user defined clock specifies '-add', any existing auto-derived clocks on that pin are retained.
+WARNING: [Timing 38-3] User defined clock exists on pin system_i/DVIClocking_0/U0/PixelClkBuffer/O [See C:/0801_cctv/0726_project/20250716_ov5640/hw.srcs/constrs_1/imports/constraints/timing.xdc:17] and will prevent any subsequent automatic derivation of generated clocks on that pin. If the user defined clock specifies '-add', any existing auto-derived clocks on that pin are retained.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+338 Infos, 60 Warnings, 14 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2643.645 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file system_wrapper_route_status.rpt -pb system_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file system_wrapper_timing_summary_routed.rpt -pb system_wrapper_timing_summary_routed.pb -rpx system_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file system_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file system_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file system_wrapper_bus_skew_routed.rpt -pb system_wrapper_bus_skew_routed.pb -rpx system_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Memdata 28-208] The XPM instance: <system_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <system_i/v_axi4s_vid_out_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <system_i/axis_data_fifo_2/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <system_i/axis_data_fifo_2>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <system_i/axis_data_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <system_i/axis_data_fifo_1>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <system_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <system_i/axis_data_fifo_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <system_i/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <system_i/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <system_i/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <system_i/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <system_i/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <system_i/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/LineBufferFIFO/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/LineBufferFIFO>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force system_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/AXI_Dehaze_Filter_0/inst/U_TRANSMISSION_MAP/tmp_div1 input system_i/AXI_Dehaze_Filter_0/inst/U_TRANSMISSION_MAP/tmp_div1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/linearstrech_0/inst/apply_gain05 input system_i/linearstrech_0/inst/apply_gain05/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/linearstrech_0/inst/apply_gain05 input system_i/linearstrech_0/inst/apply_gain05/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/linearstrech_0/inst/apply_gain15 input system_i/linearstrech_0/inst/apply_gain15/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/linearstrech_0/inst/apply_gain15 input system_i/linearstrech_0/inst/apply_gain15/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/linearstrech_0/inst/apply_gain5 input system_i/linearstrech_0/inst/apply_gain5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/linearstrech_0/inst/apply_gain5 input system_i/linearstrech_0/inst/apply_gain5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/AXI_Unsharp_Filter_L_0/inst/val1 output system_i/AXI_Unsharp_Filter_L_0/inst/val1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/AXI_Unsharp_Filter_L_0/inst/val1__0 output system_i/AXI_Unsharp_Filter_L_0/inst/val1__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/AXI_Unsharp_Filter_L_0/inst/val1__1 output system_i/AXI_Unsharp_Filter_L_0/inst/val1__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/linearstrech_0/inst/apply_gain05 output system_i/linearstrech_0/inst/apply_gain05/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/linearstrech_0/inst/apply_gain15 output system_i/linearstrech_0/inst/apply_gain15/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/linearstrech_0/inst/apply_gain5 output system_i/linearstrech_0/inst/apply_gain5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/AXI_Dehaze_Filter_0/inst/U_TRANSMISSION_MAP/tmp_div1 multiplier stage system_i/AXI_Dehaze_Filter_0/inst/U_TRANSMISSION_MAP/tmp_div1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/AXI_Unsharp_Filter_L_0/inst/val1 multiplier stage system_i/AXI_Unsharp_Filter_L_0/inst/val1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/AXI_Unsharp_Filter_L_0/inst/val1__0 multiplier stage system_i/AXI_Unsharp_Filter_L_0/inst/val1__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/AXI_Unsharp_Filter_L_0/inst/val1__1 multiplier stage system_i/AXI_Unsharp_Filter_L_0/inst/val1__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/linearstrech_0/inst/apply_gain05 multiplier stage system_i/linearstrech_0/inst/apply_gain05/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/linearstrech_0/inst/apply_gain15 multiplier stage system_i/linearstrech_0/inst/apply_gain15/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/linearstrech_0/inst/apply_gain5 multiplier stage system_i/linearstrech_0/inst/apply_gain5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[0] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[1] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[2] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[3] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[4] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[5] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[6] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/WEBWE[7] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/ENBWREN (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEBWE[0] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEBWE[1] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/WEBWE[2] (net: system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 66 net(s) have no routable loads. The problem bus(es) and/or net(s) are system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_i/MIPI_CSI_2_RX_0/U0/MIPI_CSI2_Rx_inst/LLP_inst/DataFIFO/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[1].DPHY_LaneSFEN_X/HSDeserializerX/dLP[0]_0[2], system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[0].DPHY_LaneSFEN_X/HSDeserializerX/dLP[0]_0[2], system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[0].DPHY_LaneSFEN_X/HSDeserializerX/dLP[0]_0[3], system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[1].DPHY_LaneSFEN_X/HSDeserializerX/dLP[0]_0[3], system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[0].DPHY_LaneSFEN_X/HSDeserializerX/dLP[0]_0[4], system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[1].DPHY_LaneSFEN_X/HSDeserializerX/dLP[0]_0[4], system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[0].DPHY_LaneSFEN_X/HSDeserializerX/dLP[0]_0[5], system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[1].DPHY_LaneSFEN_X/HSDeserializerX/dLP[0]_0[5], system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[1].DPHY_LaneSFEN_X/HSDeserializerX/dLP[0]_0[6], system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[0].DPHY_LaneSFEN_X/HSDeserializerX/dLP[0]_0[6], system_i/MIPI_D_PHY_RX_0/U0/DataLaneGen[0].DPHY_LaneSFEN_X/HSDeserializerX/dLP[0]_0[7]... and (the first 15 of 50 listed).
+INFO: [DRC REQP-165] writefirst: Synchronous clocking is detected for BRAM (system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-165] writefirst: Synchronous clocking is detected for BRAM (system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 33 Warnings, 4 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./system_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+371 Infos, 94 Warnings, 15 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:34 ; elapsed = 00:00:23 . Memory (MB): peak = 2945.543 ; gain = 301.898
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  1 20:07:00 2025...
